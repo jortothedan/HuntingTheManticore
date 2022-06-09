@@ -37,8 +37,7 @@ else
 }
 
 
-void
-    ShotPlacement() // get a target range from the second player, and resolve it's effect. tell the user if they over shoot, undershoot or hit the manticore. If hit reduce manticore health.
+void ShotPlacement() // get a target range from the second player, and resolve it's effect. tell the user if they over shoot, undershoot or hit the manticore. If hit reduce manticore health.
 {
     if (cannonRange > manticorePosition)
     {
@@ -51,7 +50,7 @@ void
     else
     {
         Console.WriteLine("That round was a DIRECT HIT!");
-        manticoreHealth = manticoreHealth - cannonDamage;
+        manticoreHealth -= cannonDamage;
     }
 }
 
